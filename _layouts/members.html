@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
 
-    <link rel="stylesheet" href='{{ "/assets/css/normalize.css" | relative_url }}'>
+    <link rel="stylesheet" href='{{ "/assets/css/main.css" | relative_url }}'>
     <link rel="stylesheet" href='{{ "/assets/css/components.css" | relative_url }}'>
     <link rel="stylesheet" href='{{ "/assets/css/members.css" | relative_url }}'>
 
@@ -17,85 +17,7 @@
   </head>
   <body>
     <div class="page-wrapper">
-      <div class="top-nav">
-        <a href="#" class="logo-link w-nav-brand">
-          <h3>Member Dashboard</h3>
-        </a>
-        <div data-hover="1" data-delay="100" class="dropdown w-dropdown">
-          <div class="navigation-item profile-nav w-dropdown-toggle">
-            <img src="/assets/img/profile.jpg" alt="" class="profile-pic">
-            <div>Hi, <span data-ms-member="first-name">User</span>!</div>
-          </div>
-          <nav class="nav-dropdown-list w-dropdown-list">
-            <div class="nav-drop-list-padding">
-              <a ms-profile="true" href="#" class="navigation-item dropdown-nav-item w-inline-block">
-                <div class="navigation-icon"></div>
-                <div>Profile</div>
-              </a>
-              <a ms-logout="true" href="#" class="navigation-item logout-link w-inline-block">
-                <div class="navigation-icon"></div>
-                <div>Log out</div>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-        <div class="navigation-menu w-tab-menu">
-          <a data-w-tab="Tab 1" class="navigation-item w-inline-block w-tab-link w--current">
-            <div class="navigation-icon"></div>
-            <div>Overview</div>
-          </a>
-          <a data-w-tab="Tab 9" class="navigation-item w-inline-block w-tab-link">
-            <div class="navigation-icon"></div>
-            <div>Project</div>
-          </a>
-          <a data-w-tab="Tab 2" class="navigation-item w-inline-block w-tab-link">
-            <div class="navigation-icon"></div>
-            <div>Documents</div>
-          </a>
-          <a data-w-tab="Tab 3" class="navigation-item w-inline-block w-tab-link">
-            <div class="navigation-icon"></div>
-            <div>Progress</div>
-          </a>
-          <a data-w-tab="Tab 4" class="navigation-item w-inline-block w-tab-link">
-            <div class="navigation-icon"></div>
-            <div>Assets</div>
-          </a>
-          <a data-w-tab="Tab 8" class="navigation-item hide-on-mobile w-inline-block w-tab-link">
-            <div class="navigation-icon"></div>
-            <div>Apps</div>
-          </a>
-        </div>
-
        {{ content }}
-
-      </div>
-
-      <div class="top-nav footer-nav">
-        <div class="contain">
-          <a href="#" class="logo-link w-nav-brand">
-            <div>{{ site.title }}</div>
-          </a>
-          <div class="copyright">&copy; {{ 'now' | date: "%Y" }}</div>
-        </div>
-        <div class="footer-menu">
-          <a href="https://webflow.com?rfsn=1495911.39ce0" target="_blank" class="navigation-item footer-nav-item w-inline-block">
-            <img src="/assets/img/5cbcc29efad96cf6f89a0d61_Webflow-round.svg" alt="" class="navigation-icon">
-            <div>Webflow</div>
-          </a>
-          <a href="https://slack.com/" target="_blank" class="navigation-item footer-nav-item w-inline-block">
-            <img src="/assets/img/slack-new-logo.svg" alt="" class="navigation-icon">
-            <div>Slack Community</div>
-          </a>
-          <a href="https://www.memberstack.io" target="_blank" class="navigation-item footer-nav-item w-inline-block">
-            <img src="/assets/img/Logo.svg" alt="" class="navigation-icon memberstack-logo">
-            <div>MemberStack</div>
-          </a>
-        </div>
-        <div class="social-row"><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c90d43d1dc53de2e_Facebook.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f38c6b14fc86a26b25f_Twitter.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f47ec31a1854e1cf128_Youtube.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1fe7b775662acf936ca5_Dribbble.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda21dec6b14f2e4826b7e3_Spotify.svg" alt=""></a><a href="#" class="social-link w-inline-block"><img src="https://uploads-ssl.webflow.com/5cd9dbe554fe38a1c05e6a9b/5cda1f4ac90d43b98853de4c_Behance.svg" alt=""></a></div>
-      </div>
-      <div class="mobile-footer-spacing"></div>
     </div>
 
     <script src="https://d1tdp7z6w94jbb.cloudfront.net/js/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

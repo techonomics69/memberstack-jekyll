@@ -3,6 +3,57 @@ layout: members
 title: "Member Dashboard"
 ---
 
+  <div class="top-nav">
+    <a href="#" class="logo-link w-nav-brand">
+      <h3>Member Dashboard</h3>
+    </a>
+    <div data-hover="1" data-delay="100" class="dropdown w-dropdown">
+      <div class="navigation-item profile-nav w-dropdown-toggle">
+        <img src="/assets/img/profile.jpg" alt="" class="profile-pic">
+        <div>Hi, <span data-ms-member="first-name">User</span>!</div>
+      </div>
+      <nav class="nav-dropdown-list w-dropdown-list">
+        <div class="nav-drop-list-padding">
+          <a ms-profile="true" href="#" class="navigation-item dropdown-nav-item w-inline-block">
+            <div class="navigation-icon"></div>
+            <div>Profile</div>
+          </a>
+          <a ms-logout="true" href="#" class="navigation-item logout-link w-inline-block">
+            <div class="navigation-icon"></div>
+            <div>Log out</div>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+    <div class="navigation-menu w-tab-menu">
+      <a data-w-tab="Tab 1" class="navigation-item w-inline-block w-tab-link w--current">
+        <div class="navigation-icon"></div>
+        <div>Overview</div>
+      </a>
+      <a data-w-tab="Tab 9" class="navigation-item w-inline-block w-tab-link">
+        <div class="navigation-icon"></div>
+        <div>Project</div>
+      </a>
+      <a data-w-tab="Tab 2" class="navigation-item w-inline-block w-tab-link">
+        <div class="navigation-icon"></div>
+        <div>Documents</div>
+      </a>
+      <a data-w-tab="Tab 3" class="navigation-item w-inline-block w-tab-link">
+        <div class="navigation-icon"></div>
+        <div>Progress</div>
+      </a>
+      <a data-w-tab="Tab 4" class="navigation-item w-inline-block w-tab-link">
+        <div class="navigation-icon"></div>
+        <div>Assets</div>
+      </a>
+      <a data-w-tab="Tab 8" class="navigation-item hide-on-mobile w-inline-block w-tab-link">
+        <div class="navigation-icon"></div>
+        <div>Apps</div>
+      </a>
+    </div>
+
     <div class="dash-tab-wrapper w-tab-content">
       <div data-w-tab="Tab 1" class="dashboard-section w-tab-pane w--tab-active">
         <div class="container">
@@ -106,7 +157,7 @@ title: "Member Dashboard"
             <div class="template-left">
               <div class="white-box full-width">
                 <div class="box-padding">
-                  <h4>Hi <span ms-data="first-name">name</span>!</h4>
+                  <h4>Hi <span data-ms-member="first-name">User</span>!</h4>
                   <div class="project-message">To the right, you&#x27;ll find a live preview of your site. Please take some time to look it over, and submit your thoughts via the chat. <br><br>You can check in for updates at any time. </div>
                 </div>
               </div>
@@ -163,7 +214,7 @@ title: "Member Dashboard"
                 <img src="/assets/img/1.svg" alt="" class="doc-image">
                 <h3 class="doc-heading">Proposal</h3>
                 <div class="doc-description">This is brief description of the document. Click to download.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
               <img src="/assets/img/paper.svg" alt="" class="paper">
             </a>
@@ -172,7 +223,7 @@ title: "Member Dashboard"
                 <img src="/assets/img/2.svg" alt="" class="doc-image">
                 <h3 class="doc-heading">Terms</h3>
                 <div class="doc-description">This is brief description of the document. Click to download.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
               <img src="/assets/img/paper.svg" alt="" class="paper">
             </a>
@@ -181,7 +232,7 @@ title: "Member Dashboard"
                 <img src="/assets/img/3.svg" alt="" class="doc-image">
                 <h3 class="doc-heading">Budget</h3>
                 <div class="doc-description">This is brief description of the document. Click to download.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
               <img src="/assets/img/paper.svg" alt="" class="paper">
             </a>
@@ -190,7 +241,7 @@ title: "Member Dashboard"
                 <img src="/assets/img/2.svg" alt="" class="doc-image">
                 <h3 class="doc-heading">Contract</h3>
                 <div class="doc-description">This is brief description of the document. Click to download.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
               <img src="/assets/img/paper.svg" alt="" class="paper">
             </a>
@@ -199,7 +250,7 @@ title: "Member Dashboard"
                 <img src="/assets/img/3.svg" alt="" class="doc-image">
                 <h3 class="doc-heading">Members<br></h3>
                 <div class="doc-description">This is brief description of the document. Click to download.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
               <img src="/assets/img/paper.svg" alt="" class="paper">
             </a>
@@ -323,7 +374,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/adult-beautiful-beauty-1054422.jpg" class="white-box link-box asset-box w-inline-block">
@@ -331,7 +382,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/beautiful-bloom-blooming-979932.jpg" class="white-box link-box asset-box w-inline-block">
@@ -339,7 +390,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/MZ-7AaQh_400x400.jpg" class="white-box link-box asset-box w-inline-block">
@@ -347,7 +398,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/adventure-asphalt-daylight-1955134-1.jpg" class="white-box link-box asset-box w-inline-block">
@@ -355,7 +406,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/coca-cola-machine-mobilechallenge-899786.jpg" class="white-box link-box asset-box w-inline-block">
@@ -363,7 +414,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/pexels-photo-167699.jpeg" class="white-box link-box asset-box w-inline-block">
@@ -371,7 +422,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/pexels-photo-167699.jpeg" class="white-box link-box asset-box w-inline-block">
@@ -379,7 +430,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
             <a href="/assets/img/bag-blurred-background-daylight-1353029-1.jpg" class="white-box link-box asset-box w-inline-block">
@@ -387,7 +438,7 @@ title: "Member Dashboard"
               <div class="box-padding">
                 <h3 class="doc-heading">Asset.jpg</h3>
                 <div class="doc-description">This is brief description.</div>
-                <div class="doc-date">27 January 2019</div>
+                <div class="doc-date" data-ms-member="signup-date">27 January 2019</div>
               </div>
             </a>
           </div>
@@ -446,4 +497,7 @@ title: "Member Dashboard"
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="p-3">&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</div>
 
