@@ -9,7 +9,7 @@ Enjoy 🙂
 
 ## Project setup
 ```
-git clone . git@github.com:4927simon/memberstack-jekyll.git
+git clone git@github.com:4927simon/memberstack-jekyll.git
 cd memberstack-jekyll
 bundle exec jekyll serve
 ```
