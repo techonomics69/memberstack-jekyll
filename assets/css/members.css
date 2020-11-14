@@ -42,11 +42,10 @@
 
 body {
   background-color: #f1f6fd;
-  font-family: Karla, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
-  letter-spacing: -0.3px;
 }
 
 h3 {
@@ -457,19 +456,21 @@ label {
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
-  opacity: 0.6;
+  opacity: 0.9;
   color: #000;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  transition: all 0.15s;
 }
 
-.navigation-item:hover {
-  opacity: 0.9;
-}
-
+.navigation-item:hover,
 .navigation-item:active {
-  opacity: 0.8;
+  opacity: 1;
+}
+
+.navigation-item:focus {
+  outline: 0;
 }
 
 .navigation-item.w--current {
@@ -540,7 +541,7 @@ label {
 
 .profile-pic {
   overflow: hidden;
-  max-width: 34px;
+  max-width: 48px;
   margin-right: 0.75em;
   border-radius: 50%;
 }
