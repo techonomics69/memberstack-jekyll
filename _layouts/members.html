@@ -4,15 +4,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>{{ page.title }} - {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+
+    <link rel="stylesheet" href='{{ "/assets/css/normalize.css" | relative_url }}'>
+    <link rel="stylesheet" href='{{ "/assets/css/components.css" | relative_url }}'>
+    <link rel="stylesheet" href='{{ "/assets/css/members.css" | relative_url }}'>
 
     <!-- Memberstack (IMPORTANT: replace with your Website Header Code) -->
     <script src="https://api.memberstack.io/static/memberstack.js?custom" data-memberstack-id="14553698b3de7a0928235b5419878c42"> </script>
   </head>
   <body>
-    <div class="p-5 content">
-      {{ content }}
-    </div>
+
+    {{ content }}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
