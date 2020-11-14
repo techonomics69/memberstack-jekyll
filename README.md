@@ -17,9 +17,7 @@ bundle exec jekyll serve
 ```
 
 ### Create Memberstack account
-```
 See [Memberstack](https://www.memberstack.com/).
-```
 
 ### Jekyll docs
 See [Quick-start Instructions](https://jekyllrb.com/).
