@@ -1,0 +1,93 @@
+<div class="container">
+  <h3>Welcome back, <span data-ms-member="first-name">User</span>!</h3>
+  <div class="dash-row">
+    <div class="white-box third">
+      <div class="box-padding">
+        <div class="colorful-icon green"></div>
+        <h3 class="large-number">$<span ms-data="budget">15,000</span></h3>
+        <div>Starting budget</div>
+      </div>
+    </div>
+    <div class="white-box third">
+      <div class="box-padding">
+        <div class="colorful-icon green"></div>
+        <h3 class="large-number">$<span ms-data="spend">5,030</span></h3>
+        <div>Total spend</div>
+      </div>
+    </div>
+    <div class="white-box third mobile-full-box">
+      <div class="box-padding">
+        <div class="colorful-icon purple"></div>
+        <h3 ms-data="launch" class="large-number"><span data-ms-member="signup-date">14 Nov 2020</span></h3>
+        <div>Signup Date</div>
+      </div>
+    </div>
+    <div class="white-box two-third">
+      <div class="box-padding">
+        <div class="w-embed w-script">
+          <canvas id="lineChart"></canvas>
+          <script>
+            var ctx = document.getElementById('lineChart').getContext('2d');
+            var chart = new Chart(ctx, {
+                // The type of chart we want to create
+                type: 'line',
+                // The data for our dataset
+                data: {
+                    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                    datasets: [{
+                        label: 'Subscribers',
+                        backgroundColor: 'rgb(3, 112, 255, 0.5)',
+                        borderColor: 'rgb(3, 112, 255, 0.9)',
+                        data: [0, 100, 50, 120, 200, 250, 500]
+                    }]
+                },
+                // Configuration options go here
+                options: {}
+            });
+
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="white-box third">
+      <div class="box-padding">
+        <div class="w-embed w-script">
+          <canvas id="myDonut"></canvas>
+          <script>
+            var data = {
+            labels: [
+              "Red",
+              "Blue",
+              "Yellow"
+            ],
+            datasets: [
+              {
+                data: [45, 55],
+                backgroundColor: [
+                  "#02c908","#f6f9f9"
+                ],
+                hoverBackgroundColor: [
+                  "#02c908","#f6f9f9"
+                ],
+                hoverBorderColor: [
+                  "#fff","#fff"
+                ]
+              }]
+            };
+            var promisedDeliveryChart = new Chart(document.getElementById('myDonut'), {
+            type: 'doughnut',
+            data: data,
+            options: {tooltips: false,
+              responsive: true,
+              legend: {
+                display: false
+              }
+            }
+            });
+          </script>
+        </div>
+        <div class="center-label">Random donut chart</div>
+      </div>
+    </div>
+  </div>
+</div>
