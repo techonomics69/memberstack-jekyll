@@ -1,6 +1,26 @@
 @import "variables";
 @import "bootstrap/scss/bootstrap";
 
-.content {
-  font-size: $custom-font-size;
+body {
+  font: 18px/30px "Avenir Next", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero {
+  min-height: 95vh;
+  background-color: $blue;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+}
+
+a {
+  transition: all 0.15s;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.85;
+  }
 }

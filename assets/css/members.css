@@ -588,12 +588,10 @@ label {
 #menu-toggle {
   width: 50px;
   height: 50px;
-  margin: 25px auto;
+  margin: 20px auto;
   position: relative;
   position: relative;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.4);
-  border-radius: 5px;
 }
 #menu-toggle:hover {
   background: rgba(255, 255, 255, 0.8);
@@ -798,6 +796,8 @@ label {
 
 .white-box.full-width {
   width: 100%;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .white-box.third {
@@ -1792,8 +1792,8 @@ label {
     display: none;
   }
   .top-nav {
-    padding-right: 0em;
-    padding-left: 1em;
+    padding-right: 0;
+    padding-left: 0;
   }
   .navigation-icon {
     z-index: 999;
@@ -1822,6 +1822,8 @@ label {
   .template-left {
     padding-right: 0px;
     padding-left: 0px;
+    min-width: 100%;
+    margin-right: 0;
   }
   .tabs {
     z-index: 999;
