@@ -63,6 +63,7 @@ a {
 a:hover {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 label {
@@ -491,8 +492,6 @@ label {
 }
 
 .navigation-item.profile-nav {
-  margin-top: -1em;
-  margin-bottom: -1em;
   font-size: 15px;
 }
 
@@ -516,7 +515,7 @@ label {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.2em 1.5em 1em;
+  padding: 0 1.5em;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
@@ -595,9 +594,9 @@ label {
 
 .nav-dropdown-list {
   opacity: 0;
-  -webkit-transform: translate(0px, -10px);
-  -ms-transform: translate(0px, -10px);
-  transform: translate(0px, -10px);
+  -webkit-transform: translate(0px, 6px);
+  -ms-transform: translate(0px, 6px);
+  transform: translate(0px, 6px);
 }
 
 .nav-dropdown-list.w--open {
@@ -1561,6 +1560,7 @@ label {
   }
   .navigation-menu {
     display: block;
+    text-align: left;
   }
   .navigation-item {
     padding-right: 0.5em;
