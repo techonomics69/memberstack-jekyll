@@ -4,9 +4,22 @@ title: "Member Dashboard"
 ---
 
 <div class="top-nav">
-  <a href="/members" class="logo-link w-nav-brand">
-    <h3 class="m-0">Member Dashboard</h3>
-  </a>
+  <div class="d-flex align-items-center">
+    <div id="menu-toggle">
+      <div id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="cross">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <a href="/members" class="ml-2 logo-link w-nav-brand">
+      <h3 class="m-0">Member Dashboard</h3>
+    </a>
+  </div>
   <div data-hover="1" data-delay="100" class="dropdown w-dropdown">
     <div class="navigation-item profile-nav w-dropdown-toggle">
       <img src="/assets/img/profile.jpg" alt="" class="profile-pic">
@@ -15,7 +28,7 @@ title: "Member Dashboard"
   </div>
 </div>
 <div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
-  <div class="navigation-menu w-tab-menu">
+  <div class="navigation-menu w-tab-menu" style='display: none'>
     <a data-w-tab="Tab 1" class="navigation-item w-inline-block w-tab-link w--current">
       <div class="navigation-icon"></div>
       <div>Overview</div>
