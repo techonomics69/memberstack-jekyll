@@ -11,6 +11,7 @@ Enjoy 🙂
 ```
 git clone git@github.com:4927simon/memberstack-jekyll.git
 cd memberstack-jekyll
+npm install
 bundle exec jekyll serve
 ```
 
