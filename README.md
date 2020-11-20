@@ -19,3 +19,7 @@ See [Memberstack](https://www.memberstack.com/).
 
 ### Jekyll docs
 See [Quick-start Instructions](https://jekyllrb.com/).
+
+### Credits
+
+[Chris Lally](https://lottiefiles.com/28007-nocode-rocket-boarding-clone-comp-2020)
